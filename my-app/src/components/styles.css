@@ -1,0 +1,75 @@
+body{
+    background-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 5%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 5%;
+}
+h1{
+    font-size: 3em;
+    padding-left: 0.5em;
+}
+h2{
+    font-size: 2em;
+    padding-left: 0.5em;
+}
+p{
+    padding-left: 1em;
+    font-size: x-large;
+    font-style: italic;
+
+}
+header > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.nav{
+    background-color: rgb(15, 114, 114);
+    margin-top: 5%;
+    padding: 0.2em;
+    border-radius: 2em;
+}
+.nav-ul{
+    list-style: none;
+    text-align: center;
+}
+.nav-li{
+    display: inline-block;
+    font-size: x-large;
+    padding-right: 5%;
+}
+.nav-a {
+    color:rgb(228, 81, 18);
+}
+section{
+    display: flex;
+}
+article{
+    flex: 1;
+    background-color: rgb(231, 240, 182);
+    border-radius: 2em;
+    margin-top: 5em;
+    padding-left: .2em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    text-align: left;
+}
+article.ar1{
+    /* background-image: url("little lemon.png"); */
+    display: block;
+}
+footer{
+    display: flex;
+}
+footer div{
+    flex:1;
+}
+article img{
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        margin-left: 4em;
+}

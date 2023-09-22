@@ -1,6 +1,6 @@
 import './App.css';
 import Navigationbar from './components/Navigationbar';
-import Herosection from './components/Hersection';
+import Herosection from './components/Herosection';
 import Highlights from './components/Highlights';
 import Testimonials from './components/Testimonials';
 import About from './components/About';
