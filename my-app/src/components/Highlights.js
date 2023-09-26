@@ -1,34 +1,40 @@
+import './styles.css';
+import greeksalad from '../Images/greeksalad.jpg'
+
 function Highlights () {
-   const divStyle={
-      display:"flex"
-   }
+
      return (
-      <section>
-      <div>   
-      <article>
-        <h1>This week specials </h1>
-        </article>
-      <article><button>Online Menu</button></article>
-      </div>
-      <div style={divStyle}><article >
-         <h1>Greek Salad</h1>
-         <h2>12.99</h2>
-         <p>Refreshing salad, made with tomato, lettuce, feta cheese, and olives. Dressed with salt, hot pepper, and olive oil.</p>
-         <button>Order for Delivery</button>
+      <main >
+      <section className='hl-specials'>
+      <article className='hl-art'>
+            <h1 className='hl-art-h1'>Specials </h1>
       </article>
-      <article>
+      <article className='hl-art-button'> 
+             <button className="buttonStyle">Online Menu</button>
+      </article>
+      </section>
+      <section className='hl-section'>
+         <article className='h1-art'>
+            <img className='hl-images' src={greeksalad} alt="Greek Salad" />
+         <h1 className='hl-art-h1'>Greek Salad</h1>
+         <h2 className='hl-p'>12.99</h2>
+         <p className='hl-p'>Refreshing salad, made with tomato, lettuce, feta cheese, and olives. Dressed with salt, hot pepper, and olive oil.</p>
+         <p className='hl-orderText'>Order for Delivery</p>
+         </article>
+         <article className='h1-art'>
          <h1>Bruschetta</h1>
          <h2>16.99</h2>
          <p>Toasted bread, topped with tomato, prosciutto, and cheese. Seasoned with salt and olive oil.</p>
          <button>Order for Delivery</button>
       </article>
-      <article>
+      <article className='h1-art'>
          <h1>Lemon Dessert</h1>
          <h2>8.50</h2>
          <p>Fresh baked lemon bread coated in salt and sugar. Powdered in citrus and lemon zest.</p>
          <button>Order for Delivery</button>
-      </article></div>
-      </section>  
+      </article>
+      </section>
+      </main>
      )
 }
 export default Highlights;
