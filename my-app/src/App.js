@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 //import BookingForm from './components/BookingForm';
 import Main from './components/Main';
 //import {Routes, Route, Link} from "react-router-dom";
+//import LoginPage from './components/LoginPage';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Testimonials />
       <About />
       <Footer />
+      {/* <LoginPage /> */}
       {/* <Link to="/" className="nav-item">HOME</Link>
       <Link to="/ABOUT" className="nav-item">ABOUT</Link>
       <Link to="/MENU" className="nav-item">MENU</Link> */}

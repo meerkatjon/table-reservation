@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import logo from  '../Images/Logo.svg';
 import './styles.css';
+import { Routes, Route, Link } from 'react-router-dom';
+import LoginPage from './LoginPage';
 
 
 //function Navigationbar(){
@@ -11,7 +13,7 @@ import './styles.css';
     const toggleMenu = () =>{
         setMenuOpen(!menuOpen);
     };
-    console.log("toggle",toggleMenu);
+    //console.log("toggle",toggleMenu);
 
     return (
         <nav className={`navbar ${menuOpen ? "open" : ""}`}>
@@ -30,7 +32,9 @@ import './styles.css';
                     <li className='nav-li'><a className='nav-a' href="MENU">MENU</a></li>
                     <li className='nav-li'><a className='nav-a' href="RESERVATIONS">RESERVATIONS</a></li>
                     <li className='nav-li'><a className='nav-a' href="ORDER ONLINE">ORDER ONLINE</a></li>
-                    <li className='nav-li'><a className='nav-a' href="LOGIN">LOGIN</a></li>
+                    <li className='nav-li'><a className='nav-a' href="./LoginPage">LOGIN</a></li>
+                    
+                    
         </ul>
         {/* </div> */}
         </nav>

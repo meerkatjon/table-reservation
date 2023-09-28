@@ -3,7 +3,9 @@ import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import Booking from "./Booking";
 import BookingConfirmation from "./BookingConfirmation";
 import Herosection from "./Herosection";
-
+import LoginPage from "./LoginPage";
+import Navigationbar from "./Navigationbar";
+import Highlights from "./Highlights";
 
 const Main = () => {
 
@@ -54,8 +56,12 @@ const Main = () => {
         <main className="main">
             <Routes>
                 <Route path="/" element={<Herosection />} />
+                <Route path="/" element={<Navigationbar />} />
+                <Route path="/LoginPage" element={<LoginPage/>}/>
                 <Route path="/booking" element={<Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>} />
                 <Route path="/confirmed" element={<BookingConfirmation/> } />
+                
+                <Route path="/" element={<Highlights/>}/>
             </Routes>
         </main>
 

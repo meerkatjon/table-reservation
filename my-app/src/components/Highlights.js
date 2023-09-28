@@ -1,5 +1,6 @@
 import './styles.css';
 import greeksalad from '../Images/greeksalad.jpg'
+import menu from '../Images/menu.webp'
 
 function Highlights () {
 
@@ -10,7 +11,9 @@ function Highlights () {
             <h1 className='hl-art-h1'>Specials </h1>
       </article>
       <article className='hl-art-button'> 
-             <button className="buttonStyle">Online Menu</button>
+             {/* //<button className="buttonStyle">Online Menu</button> */}
+            <button> <a href={menu} class="button"  target="_blank" rel="noreferrer">Menu Card</a>
+            </button>
       </article>
       </section>
       <section className='hl-section'>

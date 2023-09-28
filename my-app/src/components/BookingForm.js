@@ -11,15 +11,17 @@ const BookingForm = (props) => {
     const [guests, setGuests] = useState("");
     const [occasion, setOccasion] = useState("");
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        props.SubmitForm(e);
-    }
     const handleDateChange = (e) => {
-        setDate(e);
-        props.dispatch(e);
+      setDate(e);
+      props.dispatch(e);
 
+  }
+
+    function handleSubmit(e){
+        e.preventDefault();
+        props.submitForm(e);
     }
+    
 
   return (
     <header>
