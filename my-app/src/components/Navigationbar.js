@@ -3,7 +3,7 @@ import logo from  '../Images/Logo.svg';
 import './styles.css';
 import { Routes, Route, Link } from 'react-router-dom';
 import LoginPage from './LoginPage';
-
+import About from './About';
 
 //function Navigationbar(){
     const Navigationbar = () => {
@@ -28,7 +28,7 @@ import LoginPage from './LoginPage';
         </div>
         <ul className={`nav-ul ${menuOpen ? "visible" : ""}`}>
                     <li className='nav-li'><a className='nav-a' href="HOME">HOME</a></li>
-                    <li className='nav-li'><a className='nav-a' href="ABOUT">ABOUT</a></li>
+                    <li className='nav-li'><a className='nav-a' href="./About">ABOUT</a></li>
                     <li className='nav-li'><a className='nav-a' href="MENU">MENU</a></li>
                     <li className='nav-li'><a className='nav-a' href="RESERVATIONS">RESERVATIONS</a></li>
                     <li className='nav-li'><a className='nav-a' href="ORDER ONLINE">ORDER ONLINE</a></li>

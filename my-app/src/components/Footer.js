@@ -1,3 +1,9 @@
+import React from 'react';
+import menu from '../Images/menu.webp';
+import Booking from './Booking';
+import Herosection from './Herosection';
+import LoginPage from './LoginPage';
+
 function Footer(){
     const footerStyle={
         display:"flex"
@@ -10,12 +16,12 @@ function Footer(){
             <article>
             <h1>Navigation</h1>
             <ul style={ulStyle}>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="menu.html">menu</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="./About">About</a></li>
+                <li><a href={menu}>Menu</a></li>
+                <li><a href="./Herosection">Reservations</a></li>
                 <li><a href="order.html">Order</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="./Loginpage">Login</a></li>
             </ul>
             </article>
             <article>

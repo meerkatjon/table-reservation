@@ -6,6 +6,8 @@ import Herosection from "./Herosection";
 import LoginPage from "./LoginPage";
 import Navigationbar from "./Navigationbar";
 import Highlights from "./Highlights";
+import About from "./About";
+import Footer from './Footer';
 
 const Main = () => {
 
@@ -58,9 +60,11 @@ const Main = () => {
                 <Route path="/" element={<Herosection />} />
                 <Route path="/" element={<Navigationbar />} />
                 <Route path="/LoginPage" element={<LoginPage/>}/>
-                <Route path="/booking" element={<Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>} />
+                <Route path="/Booking" element={<Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>} />
                 <Route path="/confirmed" element={<BookingConfirmation/> } />
-                
+                <Route path="/About" element={<About />}/>
+                <Route path="/" element={<Footer />}/>
+                <Route path="/Herosection" element={<Herosection />}/>
                 <Route path="/" element={<Highlights/>}/>
             </Routes>
         </main>
