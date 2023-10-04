@@ -16,7 +16,7 @@ function Highlights () {
             </button>
       </article>
       </section>
-      <section className='hl-section'>
+      {/* <section className='hl-section'>
          <article className='h1-art'>
             <img className='hl-images' src={greeksalad} alt="Greek Salad" />
          <h1 className='hl-art-h1'>Greek Salad</h1>
@@ -36,7 +36,7 @@ function Highlights () {
          <p>Fresh baked lemon bread coated in salt and sugar. Powdered in citrus and lemon zest.</p>
          <button>Order for Delivery</button>
       </article>
-      </section>
+      </section> */}
       </main>
      )
 }
