@@ -1,11 +1,11 @@
 import './styles.css';
-import greeksalad from '../Images/greeksalad.jpg'
+// import greeksalad from '../Images/greeksalad.jpg'
 import menu from '../Images/menu.webp'
 
 function Highlights () {
 
      return (
-      <main >
+      <body >
       <section className='hl-specials'>
       <article className='hl-art'>
             <h1 className='hl-art-h1'>Specials </h1>
@@ -16,6 +16,8 @@ function Highlights () {
             </button>
       </article>
       </section>
+      </body>
+     )
       {/* <section className='hl-section'>
          <article className='h1-art'>
             <img className='hl-images' src={greeksalad} alt="Greek Salad" />
@@ -37,7 +39,7 @@ function Highlights () {
          <button>Order for Delivery</button>
       </article>
       </section> */}
-      </main>
-     )
+      
+     
 }
 export default Highlights;

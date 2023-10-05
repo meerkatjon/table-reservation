@@ -10,7 +10,8 @@ import Footer from './components/Footer';
 import Main from './components/Main';
 import Menu from './components/Menu';
 //import {Routes, Route, Link} from "react-router-dom";
-//import LoginPage from './components/LoginPage';
+import LoginPage from './components/LoginPage';
+import recipes from './recipes';
 
 
 function App() {
@@ -20,11 +21,13 @@ function App() {
       <Navigationbar />
       <Main />
       <Highlights />
+      <Menu />
       <Testimonials />
       <About />
       <Footer />
-      <Menu />
+      
       {/* <LoginPage /> */}
+      <recipes />
       {/* <Link to="/" className="nav-item">HOME</Link>
       <Link to="/ABOUT" className="nav-item">ABOUT</Link>
       <Link to="/MENU" className="nav-item">MENU</Link> */}

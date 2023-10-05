@@ -8,6 +8,7 @@ import Navigationbar from "./Navigationbar";
 import Highlights from "./Highlights";
 import About from "./About";
 import Footer from './Footer';
+import Menu from "./Menu";
 
 const Main = () => {
 
@@ -62,10 +63,12 @@ const Main = () => {
                 <Route path="/LoginPage" element={<LoginPage/>}/>
                 <Route path="/Booking" element={<Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>} />
                 <Route path="/confirmed" element={<BookingConfirmation/> } />
+                <Route path="/Menu" element={<Menu />} />
                 <Route path="/About" element={<About />}/>
                 <Route path="/" element={<Footer />}/>
                 <Route path="/Herosection" element={<Herosection />}/>
                 <Route path="/" element={<Highlights/>}/>
+                
             </Routes>
         </main>
 

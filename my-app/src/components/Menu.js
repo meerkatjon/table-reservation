@@ -16,16 +16,16 @@ const handleOrder = (id) => {
       })
       
       swalWithBootstrapButtons.fire({
-        title: 'Do you want to confirm order?',
-        text: "You won't be able to revert this!",
+        title: 'Do you want to confirm the order?',
+        // text: "You won't be able to revert this!",
         icon: 'warning',
         showCancelButton: false,
-        confirmButtonText: 'Yes, order it!',
+        confirmButtonText: 'Yes',
         reverseButtons: true
       }).then((result) => {
         if (result.isConfirmed) {
           swalWithBootstrapButtons.fire(
-            'Orderd!',
+            'Ordered!',
             'Your order has been confirmed.',
             'success'
           )
@@ -34,11 +34,8 @@ const handleOrder = (id) => {
 
 }
   return (
-    <div className="menu-container">
-      <div className="menu-header">
-        <h2>This weeks specials!</h2>
-        <button>Online Menu</button>
-      </div>
+    
+      <div className="menu-container">
       <div className="cards">
         {recipes.map((recipe) => (
           <div key={recipe.id} className="menu-items">
@@ -54,7 +51,10 @@ const handleOrder = (id) => {
           </div>
         ))}
       </div>
-    </div>
+      </div>
+    
+     
+
   );
 };
 
