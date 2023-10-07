@@ -1,5 +1,6 @@
 import './App.css';
-import React from 'react'
+import React, { Component } from 'react'
+//import React from 'react'
 import Navigationbar from './components/Navigationbar';
 //import Herosection from './components/Herosection';
 import Highlights from './components/Highlights';
@@ -12,34 +13,46 @@ import Menu from './components/Menu';
 //import {Routes, Route, Link} from "react-router-dom";
 import LoginPage from './components/LoginPage';
 import recipes from './recipes';
+import lemon from './Images/images.jpeg'
 
 
-function App() {
+class App extends Component {
+  render(){
+    const myStyle={
+        backgroundImage:`url(${lemon})`,
+        height:'100vh',
+        width: '100vw',
+        backgroundSize: 'cover',
+        objectFit: 'cover',
+        backgroundRepeat: 'repeat',
+        };
   return (
-    <div>
-      <nav>
+    <nav>
+      <div>
+      <div style={myStyle} >
+    
       <Navigationbar />
       <Main />
+      <div style={myStyle} >
+    
       <Highlights />
       <Menu />
+      <div style={myStyle} >
+    
       <Testimonials />
+      <div style={myStyle} >
+    
       <About />
       <Footer />
-      
-      {/* <LoginPage /> */}
       <recipes />
-      {/* <Link to="/" className="nav-item">HOME</Link>
-      <Link to="/ABOUT" className="nav-item">ABOUT</Link>
-      <Link to="/MENU" className="nav-item">MENU</Link> */}
-      </nav>
-    {/* <Routes>
-      <Route path="/" element ={<App/>}></Route>
-      <Route path="/ABOUT" element={<Herosection/>}></Route>
-      <Route path="/MENU" element={<Highlights/>}></Route>
-    </Routes>    */}
-
+      </div>
+      </div>
+      </div>
     </div>
+    </div>
+    </nav>
   );
+}
 }
 
 export default App;

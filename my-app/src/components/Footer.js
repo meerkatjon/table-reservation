@@ -3,7 +3,7 @@ import menu from '../Images/menu.webp';
 import Booking from './Booking';
 import Herosection from './Herosection';
 import LoginPage from './LoginPage';
-
+import  smalllogo from '../Images/small_logo.png';
 function Footer(){
     const footerStyle={
         display:"flex"
@@ -13,6 +13,9 @@ function Footer(){
     }
     return (
         <footer style={footerStyle}>
+            <article>
+             <img src={smalllogo} alt="Little Lemon"/>
+             </article>
             <article>
             <h1>Navigation</h1>
             <ul style={ulStyle}>
@@ -39,6 +42,7 @@ function Footer(){
                 <li><a href="instagram.html">Instagram</a></li>
                 <li><a href="joinus.html">Join us!</a></li>
             </ul>
+           
             </article>
             </footer>
 

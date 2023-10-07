@@ -16,6 +16,7 @@ import About from './About';
     //console.log("toggle",toggleMenu);
 
     return (
+        
         <nav className={`navbar ${menuOpen ? "open" : ""}`}>
         {/* <div> */}
         <a href="/">
@@ -36,7 +37,7 @@ import About from './About';
                     
                     
         </ul>
-        {/* </div> */}
+        
         </nav>
     )
 }

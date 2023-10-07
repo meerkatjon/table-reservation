@@ -39,7 +39,7 @@ const handleOrder = (id) => {
       <div className="cards">
         {recipes.map((recipe) => (
           <div key={recipe.id} className="menu-items">
-            <img src={recipe.image} alt="" />
+            <img src={recipe.image} className="menu-image" alt="" />
             <div className="menu-content">
               <div className="heading">
                 <h5>{recipe.title}</h5>

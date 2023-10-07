@@ -7,7 +7,7 @@ function Herosection() {
     return (
         <main>
         <section className="heroStyle">
-            <article>
+            <article className="banner">
                 <h2 className='heroText-h2'>Little Lemon</h2>
                 <h3 className='heroText-h3'>Chicago</h3>
                 <p className="subsection">We are a family owned Mediterranean restaurant,  <br></br>located on Maldove Street in Chicago, Illionis.  <br></br>We focus on traditional recipes served with a modern twist.</p>
