@@ -28,7 +28,7 @@ import About from './About';
             <div className="hamburgermenu"></div>   
         </div>
         <ul className={`nav-ul ${menuOpen ? "visible" : ""}`}>
-                    <li className='nav-li'><a className='nav-a' href="HOME">HOME</a></li>
+                    <li className='nav-li'><a className='nav-a' href="/">HOME</a></li>
                     <li className='nav-li'><a className='nav-a' href="./About">ABOUT</a></li>
                     <li className='nav-li'><a className='nav-a' href="MENU">MENU</a></li>
                     <li className='nav-li'><a className='nav-a' href="RESERVATIONS">RESERVATIONS</a></li>

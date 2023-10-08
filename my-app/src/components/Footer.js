@@ -21,7 +21,7 @@ function Footer(){
             <ul style={ulStyle}>
                 <li><a href="/">Home</a></li>
                 <li><a href="./About">About</a></li>
-                <li><a href={menu}>Menu</a></li>
+                <li><a href="./Menu">Menu</a></li>
                 <li><a href="./Herosection">Reservations</a></li>
                 <li><a href="order.html">Order</a></li>
                 <li><a href="./Loginpage">Login</a></li>

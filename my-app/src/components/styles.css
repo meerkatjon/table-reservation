@@ -114,7 +114,7 @@ article {
     width: 550px;
     height: 425px;
     position: absolute;
-    animation: mymove 5s infinite;
+    animation: mymove 5s;
 }
 @keyframes mymove {
   from {right: 10px;}
@@ -445,9 +445,19 @@ footer ul{
   flex: 1;
 }
 
+
 footer ul li{
   padding: 8px 0;
 }
 .hidden{
   display: none;
+}
+
+/* login page */
+.login-btn{
+  background-color:rgb(209, 183, 11);
+  width: 80px;
+  height: 40px;
+  border-color: rgb(209, 183, 11);
+  cursor: pointer;
 }

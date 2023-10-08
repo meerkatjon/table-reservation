@@ -17,7 +17,7 @@ import Navigationbar from "./Navigationbar";
         <label for="password">Password</label>
         <input type="text" id="password" required minlength="2" />
       </div>
-      <button type="submit">Log In</button>
+      <button type="submit" className="login-btn"><c>Log In</c></button>
     </form>
 
   </main>
