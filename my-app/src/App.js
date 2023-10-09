@@ -1,16 +1,12 @@
 import './App.css';
 import React, { Component } from 'react'
-//import React from 'react'
 import Navigationbar from './components/Navigationbar';
-//import Herosection from './components/Herosection';
 import Highlights from './components/Highlights';
 import Testimonials from './components/Testimonials';
 import About from './components/About';
 import Footer from './components/Footer';
-//import BookingForm from './components/BookingForm';
 import Main from './components/Main';
 import Menu from './components/Menu';
-//import {Routes, Route, Link} from "react-router-dom";
 import LoginPage from './components/LoginPage';
 import recipes from './recipes';
 import lemon from './Images/images.jpeg'

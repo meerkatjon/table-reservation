@@ -3,7 +3,6 @@ import recipes from "../recipes";
 import Swal from "sweetalert2";
 
 const Menu = () => {
-//   console.log(recipes[0]);
 const handleOrder = (id) => {
     console.log(id);
 
@@ -17,7 +16,6 @@ const handleOrder = (id) => {
       
       swalWithBootstrapButtons.fire({
         title: 'Do you want to confirm the order?',
-        // text: "You won't be able to revert this!",
         icon: 'warning',
         showCancelButton: false,
         confirmButtonText: 'Yes',

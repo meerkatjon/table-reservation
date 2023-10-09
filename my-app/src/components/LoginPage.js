@@ -1,6 +1,4 @@
  import React from "react";
-//import BookingForm from "./BookingForm";
-//import { useState } from "react";
 import {Routes, Route, Link} from "react-router-dom";
 import Navigationbar from "./Navigationbar";
 

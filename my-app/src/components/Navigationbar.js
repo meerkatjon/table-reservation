@@ -5,20 +5,17 @@ import { Routes, Route, Link } from 'react-router-dom';
 import LoginPage from './LoginPage';
 import About from './About';
 
-//function Navigationbar(){
-    const Navigationbar = () => {
+const Navigationbar = () => {
       const [menuOpen, setMenuOpen] = useState(false);
     
 
     const toggleMenu = () =>{
         setMenuOpen(!menuOpen);
     };
-    //console.log("toggle",toggleMenu);
-
+    
     return (
         
         <nav className={`navbar ${menuOpen ? "open" : ""}`}>
-        {/* <div> */}
         <a href="/">
         <img src= {logo} alt="LITTLE LEMON logo"/>
         </a>
